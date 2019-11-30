@@ -1,0 +1,60 @@
+<odoo>
+  <data>
+    <!-- explicit list view definition -->
+    <!--
+    <record model="ir.ui.view" id="elsafwa.list">
+      <field name="name">elsafwa list</field>
+      <field name="model">elsafwa.elsafwa</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="name"/>
+          <field name="value"/>
+          <field name="value2"/>
+        </tree>
+      </field>
+    </record>
+    -->
+
+    <!-- actions opening views on models -->
+    <!--
+    <record model="ir.actions.act_window" id="elsafwa.action_window">
+      <field name="name">elsafwa window</field>
+      <field name="res_model">elsafwa.elsafwa</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+    -->
+
+    <!-- server action to the one above -->
+    <!--
+    <record model="ir.actions.server" id="elsafwa.action_server">
+      <field name="name">elsafwa server</field>
+      <field name="model_id" ref="model_elsafwa_elsafwa"/>
+      <field name="state">code</field>
+      <field name="code">
+        action = {
+          "type": "ir.actions.act_window",
+          "view_mode": "tree,form",
+          "res_model": self._name,
+        }
+      </field>
+    </record>
+    -->
+
+    <!-- Top menu item -->
+    <!--
+    <menuitem name="elsafwa" id="elsafwa.menu_root"/>
+    -->
+    <!-- menu categories -->
+    <!--
+    <menuitem name="Menu 1" id="elsafwa.menu_1" parent="elsafwa.menu_root"/>
+    <menuitem name="Menu 2" id="elsafwa.menu_2" parent="elsafwa.menu_root"/>
+    -->
+    <!-- actions -->
+    <!--
+    <menuitem name="List" id="elsafwa.menu_1_list" parent="elsafwa.menu_1"
+              action="elsafwa.action_window"/>
+    <menuitem name="Server to list" id="elsafwa" parent="elsafwa.menu_2"
+              action="elsafwa.action_server"/>
+    -->
+  </data>
+</odoo>
